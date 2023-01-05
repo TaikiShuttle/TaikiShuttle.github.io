@@ -1,16 +1,44 @@
 {
   "basics": {
-    "name": "Katie Amberg-Johnson",
-    "label": "Senior Scientist, <a href=\"https://www.schrodinger.com/\">Schr&ouml;dinger, Inc.</a>",
-    "picture": "https://github.com/kambergjohnson.png",
-    "email": "katieambergjohnson@gmail.com",
-    "phone": "",
-    "website": "https://kambergjohnson.github.io",
-    "summary": "An interdisciplinary and innovative scientist combining both wet-lab expertise with computational skills. A team-oriented drug discovery biologist with experience contributing in cross-functional teams. Broad interests with projects spanning oncology, liver disease, and infectious disease.",
-    "location": { "address": "", "postalCode": "10002", "city": "New York", "countryCode": "USA", "region": "New York" },
+    "name": "Haoquan Zhou",
+    "label": "MSI Graduate Student, @<a href=\"https://www.si.umich.edu/\">UMSI</a>",
+    "picture": "../images/zhq_pic1.jpg",
+    "email": "haoquanz1660@gmail.com",
+    "phone": "734-834-8539",
+    "website": "https://taikishuttle.github.io",
+    "summary": "Hi there <span>&#128075;</span>! I am currently a first year graduate student studying <b>Information Science</b> at <a href=\"https://www.si.umich.edu/\">University of Michigan School of Information</a>. I am also a senior undergraduate student majoring in <b>Electrical and Computer Engineering</b> at <a href=\"https://umji.sjtu.edu.cn\">UM-SJTU Joint Institute</a>. <br><br> In my spare time, I participate in sports like soccer <span>&#9917;</span> and Richii Mahjong <span>&#126981;</span>. I am also an ACG subculture lover. Please feel free to invite me to all kinds of activities :)",
+    "location": { "city": "Ann Arbor", "countryCode": "USA", "region": "Michigan" },
     "profiles": [
-      { "network": "github", "username": "mmaluhia", "url": "http://github.com/kambergjohnson" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "http://linkedin.com/in/katieambergjohnson" }
+      { "network": "github", "username": "TaikiShuttle", "url": "https://github.com/taikishuttle" },
+      { "network": "linkedin", "username": "Haoquan Zhou", "url": "https://www.linkedin.com/in/haoquanzhou" }
     ]
-  }
+  },
+  "interests": [
+    { "icon": "&#129302;", "name": "Machine Learning", "keywords": ["Deep Learning", "Reinforcement Learning", "Natural Language Processing"] },
+    { "icon": "&#128200;", "name": "Data Science", "keywords": ["Exploratory Data Analysis", "Time Series Analysis", "Collaborative Data Science"] },
+    { "icon": "&#127918;", "name": "Software Engineering", "keywords": ["Web Development", "Game Development", "Software Design"] }
+  ],
+
+  "education": [
+    {
+      "institution": "University of Michigan",
+      "url": "https://www.si.umich.edu/",
+      "major": "Information Science",
+      "studyType": "Master of Science",
+      "startDate": "2022-08-29",
+      "endDate": "2024-05-01",
+      "location": "Ann Arbor, MI, USA",
+      "logo": "../images/U-M_Logo-Hex.png"
+    },
+    {
+    "institution": "Shanghai Jiaotong University",
+    "url": "https://umji.sjtu.edu.cn/",
+    "major": "Electrical and Computer Engineering",
+    "studyType": "Bachelor of Science",
+    "startDate": "2019-09-01",
+    "endDate": "2023-08-01",
+    "location": "Shanghai, China",
+    "logo": "../images/SJTU_logo.png"
+    }]
+
 }
