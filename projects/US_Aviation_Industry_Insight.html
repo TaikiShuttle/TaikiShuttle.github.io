@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="US Commercial Aviation Industry Insight | Haoquan Zhou | Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="../images/zhq_pic1.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Haoquan Zhou | Portfolio">
+    <meta property="og:url" content="https://taikishuttle.github.io/projects/US_Aviation_Industry_Insight.html">
+    <meta property="og:title" content="US Commercial Aviation Industry Insight | Haoquan Zhou | Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="../images/zhq_pic1.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">   
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>US Commercial Aviation Industry Insight | Haoquan Zhou | Portfolio</title>
+  </head>
+  <body>
+  <nav class="navbar fixed-top navbar-expand-md navbar-light  bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Haoquan Zhou</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#papers">Papers</a>
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/experience.html">Experiences</a>
+        <a class="nav-link" href="/resources/Haoquan_Zhou_Resume.pdf">Resume</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container py-4">
+  <h1 class="display-4">US Commercial Aviation Industry Insight</h1>
+ <p>Traveling by airplane is one of the most common modes of transportation for the US dwellers. Compared with countries like Japan and China, which have a high population density, the distribution of the population in the US is quite sparse and thus not suitable for developing a high speed railway network. However, the US also enjoys a huge land area, spanning from the Pacific Ocean to the Atlantic Ocean, which makes long range transportation a necessity for the US citizens. Throughout the history of the US, airplanes have thus been playing the essential role of long distance transportation.</p>
+
+<p>Due to its popularity, large scale data sets are provided by <a href="https://data.transportation.gov/">the US Department of Transportation</a> for data scientists to retrieve and analyze. These large scale data sets, which usually contain millions of records, cover a variety of commercial aviation related topics, including: departure records , airfare records, flight delay records, and airline financial reviews. Valuable information can thus be discovered from the data set and transformed into useful suggestions for stakeholders to consider.</p>
+
+<p>Inspired by the motivation mentioned above, this project series use several data sets to answer questions about the US aviation industry. In general, it can be divided into two parts.</p>
+
+<h2 id="project-part-1-recovery-of-the-us-commercial-aviation-industry-after-covid-an-international-view">Project Part 1: Recovery of the US Commercial Aviation Industry after COVID: An International View</h2>
+
+<h5 id="background">Background</h5>
+
+<p>I have been hearing from famous aviation YouTubers like Sam-Chui that the aviation industry is having its toughest years since the COVID pandemic. But I have never looking at the details by myself. Instead of just believing it to be true, I think analyzing it by myself can convince myself better. As a crazy aviation fan, I want to get some insights to the current aviation industry.</p>
+
+<h5 id="general-information">General Information</h5>
+
+<p>In this project, I am trying to analyze the US commerical aviation industry situation after 1990. I am trying to ask myself following questions:</p>
+<ol>
+  <li>What is the impact of COVID on the US commercial aviation industry?</li>
+  <li>Has the US commercial aviation industry recovered completely from the COVID pandemic?</li>
+  <li>
+    <p>Is there any significant structural change made by the COVID pandemic to the US commercial aviation industry?</p>
+
+    <p>a. Is there a significant change in top international destinations considering the flights departed from the US?</p>
+
+    <p>b. Is there a significant change in US airports rank considering the flights departed from the US?</p>
+
+    <p>c. Is there a significant change in top airline carriers considering the flights departed from the US?</p>
+  </li>
+  <li>What are the current operating conditions of the US commercial aviation industry? Does the accident rate increase?</li>
+  <li>When will the US commercial aviation industry reach the scale before the COVID pandemic?</li>
+  <li>…</li>
+</ol>
+
+<p>I hope that by answering these questions, I can know the aviation industry better. And if possible, give my naive suggestions to airline carriers to help them go through this tough period.</p>
+
+<h5 id="data-used">Data Used</h5>
+
+<p>The major data set used here is the <a href="https://www.transportation.gov/policy/aviation-policy/us-international-air-passenger-and-freight-statistics-report">International Departures</a> published by the Department of Transportation. There are also some relatively minor data sets including</p>
+
+<ol>
+  <li><a href="https://www.kaggle.com/datasets/deepcontractor/aircraft-accidents-failures-hijacks-dataset?resource=download">Aircraft Accidents, Failures &amp; Hijacks Data set</a> provided by Kaggle</li>
+  <li><a href="https://github.com/mwgg/Airports">Airport codes</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/List_of_airlines_of_the_United_States">US Airport codes</a></li>
+  <li><a href="https://www.bts.gov/topics/airlines-and-airports/airline-codes">Airline codes</a></li>
+  <li><a href="https://gist.github.com/stevewithington/20a69c0b6d2ff846ea5d35e5fc47f26c">Country and Continent Lists</a></li>
+</ol>
+
+<h5 id="manipulation--visualization-tools">Manipulation &amp; Visualization Tools</h5>
+
+<p>NumPy, Pandas, PySparkSQL, Seaborn</p>
+
+<h5 id="report">Report</h5>
+
+<p>The major analysis code is <a href="https://github.com/TaikiShuttle/SI618/blob/main/Project1/aviation_preprocess.ipynb">this Jupyter Notebook</a>.</p>
+
+<p>The report is <a href="https://github.com/TaikiShuttle/SI618/blob/main/Project1/si618-project-part-1-haoquanz.pdf">here</a>.</p>
+
+<h2 id="project-part-2-us-domestic-airline-consumer-airfare-an-inter-city-analysis">Project Part 2: US Domestic Airline Consumer Airfare: an Inter-City Analysis</h2>
+
+<h5 id="background-1">Background</h5>
+
+<p>As mentioned above, traveling by airplane is one of the most common transportation methods used in the US. As a consequence, the airfare problem becomes an important topic widely discussed by the US citizens. How to buy tickets with reasonable prices is important for money-saving. But this is not an easy task. Since the airfare is influenced both by inner factors like distance and outer factors like market situation. In this project, we want to explore which factors influence the airfare significantly, and try to use them to predict the airfare precisely.</p>
+
+<h5 id="general-information-1">General Information</h5>
+
+<p>In this project, the US domestic airline consumer airfare will be analyzed closely based on an inter-city view. The prices of flights between US major cities will be collected and inspected. In particular, there are three overarching questions covered by this project:</p>
+
+<ol>
+  <li>What is the overall trend of US domestic airfare after 1990s?</li>
+  <li>What factors determine the airfare between two cities?</li>
+  <li>Can we predict the airfare based on given information?</li>
+</ol>
+
+<h5 id="data-used-1">Data Used</h5>
+
+<p>The major data set used here is the <a href="https://data.transportation.gov/Aviation/Consumer-Airfare-Report-Table-1-Top-1-000-Contiguo/4f3n-jbg2">Consumer Airfare Report</a> published by the Department of Transportation.</p>
+
+<h5 id="manipulation--visualization-tools-1">Manipulation &amp; Visualization Tools</h5>
+
+<p>Numpy, Pandas, Plotnine, Seaborn, SkLearn</p>
+
+<h5 id="report-1">Report</h5>
+
+<p>The major analysis code is <a href="https://github.com/TaikiShuttle/SI618/blob/main/Project2/si618_project2_EDA.ipynb">this Jupyter Notebook</a>.</p>
+
+<p>The report is <a href="https://github.com/TaikiShuttle/SI618/blob/main/Project2/si618-project-2-haoquanz.pdf">here</a>.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <!-- Load Tableau visualization code for the beach contamination page -->
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.2.1.js"></script>
+
+  <script>
+    function initializeViz(element, url) {
+      // JS object that points at empty div in the html
+      var placeholderDiv = document.getElementById(element);
+      if (placeholderDiv) {
+        var options = {
+          hideTabs: true,
+          hideToolbar: true,
+        };
+        viz = new tableau.Viz(placeholderDiv, url, options);
+      }
+    }
+    initializeViz("tableauViz", "https://public.tableau.com/views/waterqualitymap4/Dashboard1?:embed=y&:display_count=yes&publish=yes");
+    initializeViz("tableauViz2", "https://public.tableau.com/views/waterqualityline/Dashboard2?:embed=y&:display_count=yes");
+  </script>
+
+  </body>
+</html>

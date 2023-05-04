@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Predict House Selling Price in Illinois | Haoquan Zhou | Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="../images/zhq_pic1.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Haoquan Zhou | Portfolio">
+    <meta property="og:url" content="https://taikishuttle.github.io/projects/Predict_house_price_in_Illinois.html">
+    <meta property="og:title" content="Predict House Selling Price in Illinois | Haoquan Zhou | Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="../images/zhq_pic1.jpg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">   
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Predict House Selling Price in Illinois | Haoquan Zhou | Portfolio</title>
+  </head>
+  <body>
+  <nav class="navbar fixed-top navbar-expand-md navbar-light  bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Haoquan Zhou</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#papers">Papers</a>
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/experience.html">Experiences</a>
+        <a class="nav-link" href="/resources/Haoquan_Zhou_Resume.pdf">Resume</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container py-4">
+  <h1 class="display-4">Predict House Selling Price in Illinois</h1>
+ <p>House price is always a topic drawing people’s attention. Purchasing a house with a reasonable price is what people keep seeking for. Thus, it becomes necessary to assess the overall condition of the house and predict a proper price for it. However, it is extremely time consuming to give a ideal selling price by human, for one have to do numerous comparisons between houses and related factors like location and decoration in order to have a rough estimation for the price.</p>
+
+<p>Meanwhile, basic machine learning models like linear regression can take multiple factors into consideration and learn the “rules” from data. It thus becomes feasible to utilize such method in predicting house selling price.</p>
+
+<p>In this project, data from Cook County Assessor’s Office (CCAO) in Illinois will be closely analyzed. The CCAO dataset consists of over 500 thousand records describing houses sold in Cook County in recent years (new records are still coming in every week!). The data set we will be working with has 61 features in total. Based on these features, several data cleaning and feature engineering steps are conducted, followed by a prediction model using machine learning. In general, this project can be divided into two parts.</p>
+
+<h2 id="project-part-1-data-cleaning-eda-and-feature-engineering">Project Part 1: Data Cleaning, EDA, and Feature Engineering</h2>
+
+<p>In this part, we try to efficiently explore the data and find some potential factors that have significant impact on the house selling price. Basic data manipulations like log transformation, key words extraction using regular expression, and one hot encoding are adopted. House features like the building area, number of bedrooms, and the neighborhood are inspected for potential relation with the selling price. At last, we combine all these preprocessing steps to a pipeline, which can be universally applied to all the entries of the dataset.</p>
+
+<p>The Jupyter Notebook file for this part can be found <a href="https://github.com/TaikiShuttle/ECE4710J/blob/main/project/Project%20-%20part%201.ipynb">here</a>.</p>
+
+<h2 id="project-part-2-predicting-house-selling-price">Project Part 2: Predicting House Selling Price</h2>
+
+<p>In this part, we try to use a Random Forest Regressors with 5-fold validation to fit the model. The fitting result is far more stronger than linear regression as a base line, which is quite satisfying.</p>
+
+<p>The Jupyter Notebook file for this part can be found <a href="https://github.com/TaikiShuttle/ECE4710J/blob/main/project/Project%20-%20part2.ipynb">here</a>.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <!-- Load Tableau visualization code for the beach contamination page -->
+  <script src="https://public.tableau.com/javascripts/api/tableau-2.2.1.js"></script>
+
+  <script>
+    function initializeViz(element, url) {
+      // JS object that points at empty div in the html
+      var placeholderDiv = document.getElementById(element);
+      if (placeholderDiv) {
+        var options = {
+          hideTabs: true,
+          hideToolbar: true,
+        };
+        viz = new tableau.Viz(placeholderDiv, url, options);
+      }
+    }
+    initializeViz("tableauViz", "https://public.tableau.com/views/waterqualitymap4/Dashboard1?:embed=y&:display_count=yes&publish=yes");
+    initializeViz("tableauViz2", "https://public.tableau.com/views/waterqualityline/Dashboard2?:embed=y&:display_count=yes");
+  </script>
+
+  </body>
+</html>
