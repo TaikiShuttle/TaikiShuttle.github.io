@@ -13,13 +13,13 @@
           {% include projects/project-card.html page=page %}
         {% endunless %}
         <!-- hard code the project limit-->
-        {% if forloop.index == 5 %}
+        {% if forloop.index == 7 %}
           {% break %}
         {% endif %}
       {% endfor %}
     </div>
     <!-- hard code the project limit-->
-    {% if project_pages.size > 5 %}
+    {% if project_pages.size > 7 %}
       <p class="text-center pt-4"><a href="{{ site.baseurl }}/projects/">See all {{ project_pages.size }} projects</a></p>
     {% endif %}
 
