@@ -4,7 +4,7 @@ type: project
 image: images/nyc.jpg
 title: "Livable Residence Evaluation System"
 # All dates must be YYYY-MM-DD format!
-date: 2023-04-30
+date: 2023.01 - 2023.04
 published: true
 labels:
   - Tableau
